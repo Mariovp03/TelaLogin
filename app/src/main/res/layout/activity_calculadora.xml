@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculadoraActivity"
+    android:layout_marginVertical="130dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/primeiroNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp"
+        android:hint="Primeiro Número"
+        android:gravity="center"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp">
+
+        <Button
+            android:id="@+id/btSomar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="+"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btSubtrair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="-"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="/"
+            android:textColorHint="@color/white"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/segundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:hint="Segundo Número"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp"
+        android:hint="Calcular"
+        android:textColorHint="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/resultadoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
